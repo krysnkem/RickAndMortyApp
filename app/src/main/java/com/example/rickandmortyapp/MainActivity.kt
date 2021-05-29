@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding?.root)
 
+
         viewModel.charactersLiveData.observe(this, { list ->
 
             characterList.addAll(list)
@@ -42,10 +43,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onResume() {
-        super.onResume()
-
-    }
 
 
     private fun setUp(binding: ActivityMainBinding) {
